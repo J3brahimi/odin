@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import LocaleSwitcher from "../components/LocaleSwitcher";
+import LocaleSwitcher from "components/LocaleSwitcher";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Box from "@mui/material/Box";
@@ -14,23 +14,9 @@ export default function Home(props) {
   return (
     <div>
       <Head>
-        <title>Aryasasol Polymer Company .:. Official website .:.</title>
+        <title>.:. Odin .:.</title>
       </Head>
-
-      <h1>{t("title")}</h1>
-      <p>
-        {t("Current")}: {locale}
-      </p>
-      <p>
-        {t("Default")}: {defaultLocale}
-      </p>
-      <p>
-        {t("Configured")}: {JSON.stringify(locales)}
-      </p>
-      <LocaleSwitcher />
-      <Box m={2}>
-        <TextField label={t("Email")} />
-      </Box>
+      <Box m={2}></Box>
     </div>
   );
 }

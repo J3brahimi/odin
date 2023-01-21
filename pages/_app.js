@@ -45,7 +45,7 @@ function MyApp(props) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <CacheProvider value={i18n.dir() === "rtl" ? cacheRtl : cacheLtr}>
+      <CacheProvider value={i18n.dir === "rtl" ? cacheRtl : cacheLtr}>
         <ThemeProvider theme={theme}>
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
