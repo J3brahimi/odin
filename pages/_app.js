@@ -5,6 +5,7 @@ import { CacheProvider } from "@emotion/react";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "theme";
 import "styles/globals.scss";
+import "styles/font/vazir-font.scss";
 import { useEffect } from "react";
 
 import createCache from "@emotion/cache";

@@ -13,11 +13,13 @@
     "@emotion/react": "^11.10.0",
     "@emotion/server": "^11.10.0",
     "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.9.3",
     "next": "12.2.3",
     "next-i18next": "^11.3.0",
     "prettier": "^2.7.1",
     "react": "18.2.0",
+    "react-animated-text-content": "^1.0.1",
     "react-dom": "18.2.0",
     "stylis": "^4.1.1",
     "stylis-plugin-rtl": "^2.1.1"

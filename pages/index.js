@@ -4,19 +4,22 @@ import LocaleSwitcher from "components/LocaleSwitcher";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Box from "@mui/material/Box";
-import { TextField } from "@mui/material";
 
-export default function Home(props) {
+import Layout from "components/layout";
+import Header from "components/Header";
+
+export default function Home() {
   const router = useRouter();
-  const { locale, locales, defaultLocale } = router;
   const { t } = useTranslation("home");
 
   return (
     <div>
       <Head>
-        <title>.:. Odin .:.</title>
+        <title>Odin</title>
       </Head>
-      <Box m={2}></Box>
+      <Layout>
+        <Header />
+      </Layout>
     </div>
   );
 }
