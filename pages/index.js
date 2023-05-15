@@ -7,6 +7,11 @@ import Box from "@mui/material/Box";
 
 import Layout from "components/layout";
 import Header from "components/Header";
+import OrderForm from "components/Order/OrderForm";
+import { Container } from "@mui/system";
+import Plans from "components/Plans/Plans";
+import Docs from "components/Docs/Docs";
+import Support from "components/Support/Support";
 
 export default function Home() {
   const router = useRouter();
@@ -19,6 +24,11 @@ export default function Home() {
       </Head>
       <Layout>
         <Header />
+        <Container>
+          <Plans />
+          <Docs />
+          <Support />
+        </Container>
       </Layout>
     </div>
   );

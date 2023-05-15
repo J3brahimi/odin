@@ -21,53 +21,12 @@ const Header = () => {
           boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
         >
           <Box textAlign="center" width={{ xs: "100%", md: "500px" }} p={4}>
-            <Typography variant="desktopH2">
-              <AnimatedText
-                type="words" // animate words or chars
-                animation={{
-                  x: "200px",
-                  y: "-20px",
-                  scale: 1.1,
-                  ease: "ease-in-out",
-                }}
-                animationType="float"
-                interval={0.06}
-                duration={0.8}
-                tag="p"
-                className="animated-paragraph"
-                includeWhiteSpaces
-                threshold={0.1}
-                rootMargin="20%"
-              >
-                {t("home:header-title")}
-              </AnimatedText>
+            <Typography component="h2" variant="desktopH2" mb={3}>
+              {t("home:header-title")}
             </Typography>
-            <Typography variant="desktopBody1">
-              <AnimatedText
-                type="words" // animate words or chars
-                animation={{
-                  x: "200px",
-                  y: "-20px",
-                  scale: 1.1,
-                  ease: "ease-in-out",
-                }}
-                animationType="float"
-                interval={0.06}
-                duration={0.8}
-                tag="p"
-                className="animated-paragraph"
-                includeWhiteSpaces
-                threshold={0.1}
-                rootMargin="20%"
-              >
-                {t("home:header-desc")}
-              </AnimatedText>
+            <Typography component="p" variant="desktopBody1">
+              {t("home:header-desc")}
             </Typography>
-            <Link href="/">
-              <Button variant="contained" size="large" sx={{ mt: 4 }}>
-                {t("home:buy")}
-              </Button>
-            </Link>
           </Box>
           <Box
             style={{

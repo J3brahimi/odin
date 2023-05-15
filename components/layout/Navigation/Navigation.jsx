@@ -48,6 +48,12 @@ const Navigation = () => {
       justifyContent="center"
       flexDirection="column"
       p={4}
+      component="a"
+      href="/"
+      sx={{
+        textDecoration: "none",
+        color: "#000",
+      }}
     >
       <Box sx={{ display: { md: "flex" } }}>
         <Image
