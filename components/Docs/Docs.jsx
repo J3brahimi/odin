@@ -13,18 +13,26 @@ const Docs = () => {
   return (
     <Box my={6}>
       <Grid container spacing={4}>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={4}>
           <DocCard
             image="/images/android-logo.png"
             title="آموزش اتصال در اندروید"
-            link="/docs/android"
+            link="/docs/out"
           />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={4}>
           <DocCard
             image="/images/apple-logo.png"
             title="آموزش اتصال در IOS"
-            link="/docs/ios"
+            link="/docs/out"
+          />
+        </Grid>
+
+        <Grid item xs={12} md={4}>
+          <DocCard
+            image="/images/pc-logo.png"
+            title="آموزش اتصال در PC"
+            link="/docs/out"
           />
         </Grid>
       </Grid>

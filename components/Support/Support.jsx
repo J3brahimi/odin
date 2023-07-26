@@ -28,7 +28,7 @@ const Support = () => {
         variant="desktopH3"
         sx={{ color: "#000", textDecoration: "none" }}
       >
-        برای ارتباط با پشتیبانی در تلگرام کلیک کنید
+        برای ارتباط با پشتیبانی و خرید در تلگرام کلیک کنید
       </Typography>
 
       <Image
